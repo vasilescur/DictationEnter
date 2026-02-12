@@ -1,0 +1,13 @@
+# Build artifacts
+DictationEnter
+DictationEnter.app/
+DictationEnter.dmg
+DictationEnter_temp.dmg
+dmg_staging/
+
+# Generated assets
+AppIcon.icns
+dmg_background.png
+
+# macOS
+.DS_Store
