@@ -2,19 +2,20 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SRC_DIR="$SCRIPT_DIR/src"
 APP_NAME="DictationEnter"
 APP_BUNDLE="$SCRIPT_DIR/$APP_NAME.app"
 
 echo "Building $APP_NAME..."
 
 # Generate app icon if needed
-if [ ! -f "$SCRIPT_DIR/AppIcon.icns" ]; then
+if [ ! -f "$SRC_DIR/AppIcon.icns" ]; then
     echo "Generating app icon..."
-    swift "$SCRIPT_DIR/generate_icon.swift"
+    swift "$SRC_DIR/generate_icon.swift"
 fi
 
 # Compile
-swiftc "$SCRIPT_DIR/$APP_NAME.swift" \
+swiftc "$SRC_DIR/$APP_NAME.swift" \
     -o "$SCRIPT_DIR/$APP_NAME" \
     -framework Cocoa \
     -framework SwiftUI \
@@ -27,8 +28,8 @@ mkdir -p "$APP_BUNDLE/Contents/Resources"
 
 # Copy files into bundle
 cp "$SCRIPT_DIR/$APP_NAME" "$APP_BUNDLE/Contents/MacOS/$APP_NAME"
-cp "$SCRIPT_DIR/Info.plist" "$APP_BUNDLE/Contents/"
-cp "$SCRIPT_DIR/AppIcon.icns" "$APP_BUNDLE/Contents/Resources/"
+cp "$SRC_DIR/Info.plist" "$APP_BUNDLE/Contents/"
+cp "$SRC_DIR/AppIcon.icns" "$APP_BUNDLE/Contents/Resources/"
 
 # Ad-hoc sign so Info.plist is bound to the signature
 codesign --force --sign - "$APP_BUNDLE"
@@ -37,7 +38,7 @@ codesign --force --sign - "$APP_BUNDLE"
 DMG_BG="$SCRIPT_DIR/dmg_background.png"
 if [ ! -f "$DMG_BG" ]; then
     echo "Generating DMG background..."
-    swift "$SCRIPT_DIR/generate_dmg_background.swift" "$DMG_BG"
+    swift "$SRC_DIR/generate_dmg_background.swift" "$DMG_BG"
 fi
 
 # Create styled DMG installer

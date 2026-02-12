@@ -6,7 +6,7 @@ DictationEnter_temp.dmg
 dmg_staging/
 
 # Generated assets
-AppIcon.icns
+src/AppIcon.icns
 dmg_background.png
 
 # macOS
