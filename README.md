@@ -24,6 +24,10 @@ Once running, Dictation Enter appears as a microphone icon in your menu bar. Cli
 - **Enable/Disable** the app
 - **Open Preferences** to configure the trigger key, timing, and launch-at-login
 
+<p align="center">
+  <img height="800" alt="image" src="https://github.com/user-attachments/assets/c749bf85-2e88-4368-b53c-fb8a038e5b8a" />
+</p>
+
 ### Trigger
 
 By default, the trigger is the **Fn** key. You can change it to any key combination or a mouse button in Preferences.
