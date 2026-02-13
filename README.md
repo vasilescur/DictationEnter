@@ -22,7 +22,7 @@ Download the DMG from the [latest release](../../releases/latest), open it, and 
 > [!WARNING]
 > If the app doesn't seem to be working, try quitting it and relaunching it from Finder (Applications). You may need to right-click the app and select **Open** to bypass macOS permission/Gatekeeper issues.
 
-Once running, Dictation Enter appears as a microphone icon in your menu bar. Click it to:
+Once running, Dictation Enter appears as a 🎙️⏎ icon in your menu bar. Click it to:
 
 - **Enable/Disable** the app
 - **Open Preferences** to configure the trigger key, timing, and launch-at-login
