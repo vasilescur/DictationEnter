@@ -16,7 +16,7 @@ When you hold a trigger key (default: Fn) to dictate, Dictation Enter detects th
 ## Installation
 
 > [!IMPORTANT]
-> **You need to run the app with extra permissions**: In Finder, navigate to Applications, Right-Click `DictationEnter`, and click **Open**. This is different from opening the app normally (i.e. via Spotlight Search), and Apple will give the app slightly more permissions when you do it this way. (permission/Gatekeeper issues)
+> **You need to run the app with extra permissions**: After installing-- In Finder, navigate to Applications, Right-Click `DictationEnter`, and click **Open**. This is different from opening the app normally (i.e. via Spotlight Search), and Apple will give the app slightly more permissions when you do it this way. (permission/Gatekeeper issues)
 > 
 > Then, in **System Preferences** > **Privacy and Security**, at the bottom, allow the app to open despite being Unverified. Once the app is running, grant the requested system Accessibility permission.
 
