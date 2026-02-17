@@ -17,10 +17,12 @@ When you hold a trigger key (default: Fn) to dictate, Dictation Enter detects th
 
 Download the DMG from the [latest release](../../releases/latest), open it, and drag Dictation Enter into Applications.
 
-## Usage
+> [!IMPORTANT]
+> **Running the app with Permissions**: In Finder, navigate to Applications, Right-Click `DictationEnter`, and click **Open**. This is different from opening the app normally (i.e. via Spotlight Search), and Apple will give the app slightly more permissions when you do it this way. (permission/Gatekeeper issues)
+> 
+> Then, in **System Preferences** > **Privacy and Security**, at the bottom, allow the app to open despite being Unverified. Once the app is running, grant the requested system Accessibility permission.
 
-> [!WARNING]
-> If the app doesn't seem to be working, try quitting it and relaunching it from Finder (Applications). You may need to right-click the app and select **Open** to bypass macOS permission/Gatekeeper issues.
+## Usage
 
 Once running, Dictation Enter appears as a 🎙️⏎ icon in your menu bar. Click it to:
 
