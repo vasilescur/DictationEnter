@@ -8,6 +8,12 @@ A macOS menu bar utility that automatically presses Enter for you when you finis
 
 When you hold a trigger key (default: Fn) to dictate, Dictation Enter detects the release and sends an Enter keypress after a configurable delay. This lets you dictate into text fields and chat apps without needing to manually confirm with Enter afterward.
 
+
+## June 2026 Update -- Dictation Enter is obsolete for Wispr Flow users :(
+
+<img style="align: center" alt="image" src="https://github.com/user-attachments/assets/54bee4d7-0cce-4dd2-865e-4f65174d22c9" />
+
+
 ## Requirements
 
 - macOS 13.0 or later
